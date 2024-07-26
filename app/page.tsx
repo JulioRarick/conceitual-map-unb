@@ -1,17 +1,19 @@
 'use client'
 
 import { DisciplineCard } from '@/components/cards/discipline-card'
-import { ContentTitleComponent } from '@/components/content-title-component'
-import { PrimaryConcepts } from '@/components/primary-concepts'
+import { ContentTitleComponent } from '@/components/home-components/content-title-component'
+import { PrimaryConcepts } from '@/components/home-components/primary-concepts'
+import { SocialMediaComponent } from '@/components/home-components/social-media-component'
 
 export default function Home() {
   return (
     <>
       <ContentTitleComponent />
-      <div className="m-8 flex select-none items-center lg:grid lg:grid-cols-2 lg:items-start">
+      <div className="m-8 flex select-none flex-col items-center lg:grid lg:grid-cols-2 lg:items-start">
         <PrimaryConcepts />
-        <div className="flex">
+        <div className="flex flex-col">
           <DisciplineCard />
+          <SocialMediaComponent />
         </div>
       </div>
     </>

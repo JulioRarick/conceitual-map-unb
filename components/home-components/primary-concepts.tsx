@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import { CardPrimaryConcept } from './cards/card-primary-concept'
+import { CardPrimaryConcept } from '../cards/card-primary-concept'
 
 export function PrimaryConcepts() {
   return (

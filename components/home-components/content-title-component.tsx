@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 import unbLogo from '@/public/unbLogo.png'
 
-import { ThemeToggle } from './theme-toggle'
-import { TextGenerateEffect } from './ui/text-generate-effect'
+import { ThemeToggle } from '../theme-toggle'
+import { TextGenerateEffect } from '../ui/text-generate-effect'
 
 export function ContentTitleComponent() {
   return (
