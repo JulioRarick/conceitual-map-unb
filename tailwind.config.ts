@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import type { Config } from 'tailwindcss'
-const { fontFamily } = require('tailwindcss/defaultTheme')
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 const config = {
   darkMode: ['class'],
