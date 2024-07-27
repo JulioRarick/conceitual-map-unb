@@ -6,6 +6,7 @@ import { AnimatedDiv } from '@/components/animated-div'
 import { CardEducationConcepts } from '@/components/cards/card-education-concepts'
 import { DialogCard } from '@/components/dialog-card'
 import { LogoLink } from '@/components/logo-link'
+import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 import {
   Carousel,
   CarouselContent,
@@ -36,9 +37,9 @@ export default function Education() {
   return (
     <>
       <LogoLink />
-      <AnimatedDiv className="mt-3 flex w-full select-none flex-col items-center justify-center gap-4 lg:mt-0 lg:items-start lg:justify-start">
+      <div className="mt-3 flex w-full select-none flex-col items-center justify-center gap-4 lg:mt-0 lg:items-start lg:justify-start">
         <TextGenerateEffect words="Educação" />
-        <div className="mb-10 flex max-w-6xl flex-col self-center">
+        <AnimatedDiv className="mb-10 flex max-w-6xl flex-col self-center">
           <h2 className="hidden self-center pb-4 text-lg font-semibold text-cyan-600 lg:block lg:pb-2">
             Passe o mouse para mais informações
           </h2>
@@ -99,8 +100,9 @@ export default function Education() {
               </Carousel>
             </div>
           </div>
-        </div>
-      </AnimatedDiv>
+        </AnimatedDiv>
+      </div>
+      <ScrollToTopButton />
     </>
   )
 }
