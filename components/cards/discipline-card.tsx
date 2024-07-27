@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 import { Button } from '../ui/button'
 
@@ -15,7 +16,9 @@ export function DisciplineCard() {
           Disciplina
         </h2>
         <Button asChild variant="link" className="text-muted-foreground">
-          <a href="">Veja mais informações</a>
+          <Link target="_blank" href="https://www.direito.unb.br/">
+            Veja mais informações
+          </Link>
         </Button>
       </div>
       <span className="text-center text-xl font-bold tracking-tight">

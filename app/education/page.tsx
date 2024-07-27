@@ -1,0 +1,38 @@
+'use client'
+
+import { CardEducationConcepts } from '@/components/cards/card-education-concepts'
+import { LogoLink } from '@/components/logo-link'
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
+
+import { cardEducationData } from './card-education-data'
+
+export default function Education() {
+  return (
+    <>
+      <LogoLink />
+      <div className="mt-3 flex w-full select-none flex-col items-center justify-center gap-4 lg:items-start lg:justify-start">
+        <TextGenerateEffect words="Educação" />
+        <div className="mb-10 flex max-w-6xl flex-col self-center">
+          <h2 className="hidden self-center pb-4 text-lg font-semibold text-cyan-600 lg:block">
+            Passe o mouse para mais informações
+          </h2>
+          <h2 className="block self-center pb-4 text-lg font-semibold text-cyan-600 lg:hidden">
+            Clique para mais informações
+          </h2>
+          <div className="flex w-full flex-col items-center justify-center gap-8 bg-transparent lg:grid lg:grid-cols-4 lg:grid-rows-2">
+            {cardEducationData.map((card) => {
+              return (
+                <div className="h-full w-full" key={card.id}>
+                  <CardEducationConcepts title={card.title} icon={card.icon}>
+                    {card.children}
+                  </CardEducationConcepts>
+                </div>
+              )
+            })}
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}

@@ -22,7 +22,7 @@ export function SocialMediaComponent() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href=""
+              href="https://github.com/JulioRarick/concept-map-unb"
               target="_blank"
               className="flex items-center justify-center rounded-md bg-cyan-600 p-2 hover:bg-cyan-500"
             >
@@ -34,7 +34,7 @@ export function SocialMediaComponent() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href=""
+              href="https://www.instagram.com/rarickn/"
               target="_blank"
               className="flex items-center justify-center rounded-md bg-cyan-600 p-2 hover:bg-cyan-500"
             >
@@ -46,7 +46,7 @@ export function SocialMediaComponent() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href=""
+              href="https://www.juliorarick.tech/"
               target="_blank"
               className="flex items-center justify-center gap-1 rounded-md bg-stone-200 p-2 text-xl font-bold text-foreground hover:bg-stone-300 dark:bg-stone-800 dark:hover:bg-stone-700"
             >

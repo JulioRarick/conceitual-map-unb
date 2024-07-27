@@ -2,13 +2,13 @@
 import {
   IconBabyCarriage,
   IconBooks,
-  IconBrain,
   IconBuilding,
   IconCopyright,
   IconHome,
   IconScale,
 } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
+import { BrainCircuit } from 'lucide-react'
 import Link from 'next/link'
 import React, { ReactNode, useState } from 'react'
 
@@ -24,14 +24,14 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
   const links = [
     {
       label: 'Home',
-      href: '#',
+      href: '/',
       icon: (
         <IconHome className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
       label: 'Educação',
-      href: '#',
+      href: '/education',
       icon: (
         <IconBooks className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
@@ -82,6 +82,7 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
             <SidebarLink
               link={{
                 label: 'Code by Julio Rarick',
+                target: '_blank',
                 href: 'https://www.juliorarick.tech/',
                 icon: <IconCopyright className="h-6 w-6 text-cyan-500" />,
               }}
@@ -100,7 +101,7 @@ export const Logo = () => {
       className="relative z-20 flex items-center space-x-2 py-1 text-sm"
     >
       <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-bl-sm rounded-br-lg rounded-tl-lg rounded-tr-sm bg-cyan-600 dark:bg-cyan-500">
-        <IconBrain className="h-5 w-5 text-white" />
+        <BrainCircuit className="h-5 w-5 text-white" />
       </div>
       <motion.span
         initial={{ opacity: 0 }}

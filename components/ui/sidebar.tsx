@@ -1,8 +1,14 @@
 'use client'
-import { IconBrain, IconMenu2, IconX } from '@tabler/icons-react'
+import { IconMenu2, IconX } from '@tabler/icons-react'
 import { AnimatePresence, motion } from 'framer-motion'
+import { BrainCircuit } from 'lucide-react'
 import Link, { LinkProps } from 'next/link'
-import React, { createContext, useContext, useState } from 'react'
+import React, {
+  ComponentProps,
+  createContext,
+  useContext,
+  useState,
+} from 'react'
 
 import { cn } from '@/lib/utils'
 
@@ -11,6 +17,7 @@ import { ThemeToggle } from '../theme-toggle'
 interface Links {
   label: string
   href: string
+  target?: string
   icon: React.JSX.Element | React.ReactNode
 }
 
@@ -122,7 +129,7 @@ export const MobileSidebar = ({
       >
         <Link href="/">
           <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-bl-sm rounded-br-lg rounded-tl-lg rounded-tr-sm bg-cyan-600 dark:bg-cyan-600">
-            <IconBrain className="h-5 w-5 text-white" />
+            <BrainCircuit className="h-5 w-5 text-white" />
           </div>
         </Link>
         <div className="z-20 flex w-full justify-end gap-4">
@@ -169,16 +176,18 @@ export const SidebarLink = ({
 }: {
   link: Links
   className?: string
-  props?: LinkProps
+  props?: LinkProps & ComponentProps<'a'>
 }) => {
-  const { open, animate } = useSidebar()
+  const { open, animate, setOpen } = useSidebar()
   return (
     <Link
       href={link.href}
+      target={link.target}
       className={cn(
         'group/sidebar flex items-center justify-start gap-2 py-2',
         className,
       )}
+      onClick={() => setOpen(!open)}
       {...props}
     >
       {link.icon}
