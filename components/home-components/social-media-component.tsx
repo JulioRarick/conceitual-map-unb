@@ -1,8 +1,8 @@
 import { GitHubLogoIcon, InstagramLogoIcon } from '@radix-ui/react-icons'
-import { motion } from 'framer-motion'
 import { Link2 } from 'lucide-react'
 import Link from 'next/link'
 
+import { AnimatedDiv } from '../animated-div'
 import {
   Tooltip,
   TooltipContent,
@@ -12,12 +12,7 @@ import {
 
 export function SocialMediaComponent() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-      className="m-10 flex items-center justify-center gap-6"
-    >
+    <AnimatedDiv className="m-10 flex items-center justify-center gap-6">
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -56,6 +51,6 @@ export function SocialMediaComponent() {
           <TooltipContent>Veja meu portfólio</TooltipContent>
         </Tooltip>
       </TooltipProvider>
-    </motion.div>
+    </AnimatedDiv>
   )
 }

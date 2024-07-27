@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils'
 const fontSans = FontSans({
   subsets: ['latin'],
   variable: '--font-sans',
+  weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {

@@ -1,15 +1,9 @@
-import { motion } from 'framer-motion'
-
+import { AnimatedDiv } from '../animated-div'
 import { CardPrimaryConcept } from '../cards/card-primary-concept'
 
 export function PrimaryConcepts() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-      className="flex h-full w-full flex-col rounded-md bg-stone-200/50 p-4 shadow-md dark:bg-stone-900/50 lg:p-10"
-    >
+    <AnimatedDiv className="flex h-full w-full flex-col rounded-md bg-stone-200/50 p-4 shadow-md dark:bg-stone-900/50 lg:p-10">
       <h1 className="w-full justify-self-center text-center text-2xl font-bold tracking-tight text-foreground lg:pb-4 lg:text-3xl">
         Conceitos gerais
       </h1>
@@ -43,6 +37,6 @@ export function PrimaryConcepts() {
           author="Chat GPT kkkkk"
         />
       </div>
-    </motion.div>
+    </AnimatedDiv>
   )
 }

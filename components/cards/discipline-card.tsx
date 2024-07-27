@@ -1,16 +1,11 @@
-import { motion } from 'framer-motion'
 import Link from 'next/link'
 
+import { AnimatedDiv } from '../animated-div'
 import { Button } from '../ui/button'
 
 export function DisciplineCard() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8 }}
-      className="ml-10 hidden flex-col gap-2 rounded-md bg-stone-200/50 shadow-md dark:bg-stone-900/50 lg:flex lg:p-10"
-    >
+    <AnimatedDiv className="ml-10 hidden flex-col gap-2 rounded-md bg-stone-200/50 shadow-md dark:bg-stone-900/50 lg:flex lg:p-10">
       <div className="flex items-center justify-between">
         <h2 className="text-start text-3xl font-bold tracking-tight">
           Disciplina
@@ -47,6 +42,6 @@ export function DisciplineCard() {
         Conhecer instituições de Direito Público e Privado brasileiro, numa
         perspectiva panorâmica, interdisciplinar e crítica.
       </p>
-    </motion.div>
+    </AnimatedDiv>
   )
 }
