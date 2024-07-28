@@ -19,20 +19,20 @@ export function PrimaryConcepts() {
         <CardPrimaryConcept
           title="Necropolítica"
           description="Necropolítica é a capacidade de estabelecer parâmetros em que a submissão da vida pela morte está legitimada."
-          goingTo="/education"
+          goingTo="/necropolitics"
           linkLabel="Entender Necropolítica"
           author="Achille Mbembe"
         />
         <CardPrimaryConcept
           title="Aborto"
           description="Políticas de aborto, questões de gênero e justiça social."
-          goingTo="/education"
+          goingTo="/miscarriage"
           linkLabel="Debater Aborto"
         />
         <CardPrimaryConcept
           title="Controle Político"
           description="Administração de poder governamental para manter ordem e governança social."
-          goingTo="/education"
+          goingTo="/political-control"
           linkLabel="Analisar"
           author="Chat GPT kkkkk"
         />

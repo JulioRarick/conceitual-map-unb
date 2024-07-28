@@ -62,7 +62,7 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
   return (
     <div
       className={cn(
-        'mx-auto flex w-full flex-1 flex-col overflow-hidden rounded-md bg-stone-200 dark:bg-stone-900 lg:h-screen lg:flex-row',
+        'mx-auto flex w-full flex-1 select-none flex-col overflow-hidden rounded-md bg-stone-200 dark:bg-stone-900 lg:h-screen lg:flex-row',
         // 'h-[60vh]', // for your use case, use `h-screen` instead of `h-[60vh]`
       )}
     >
