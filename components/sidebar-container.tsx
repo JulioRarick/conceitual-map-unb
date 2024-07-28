@@ -38,21 +38,21 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
     },
     {
       label: 'Necropolítica',
-      href: '#',
+      href: '/necropolitic',
       icon: (
         <IconBuilding className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
       label: 'Aborto',
-      href: '#',
+      href: '/miscarriage',
       icon: (
         <IconBabyCarriage className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
       label: 'Controle político',
-      href: '#',
+      href: '/political-control',
       icon: (
         <IconScale className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),

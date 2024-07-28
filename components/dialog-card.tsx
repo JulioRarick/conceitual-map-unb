@@ -12,17 +12,25 @@ interface DialogCardProps {
   title: string
   description: string
   buttonTitle: string
+  variant?:
+    | 'default'
+    | 'destructive'
+    | 'outline'
+    | 'secondary'
+    | 'ghost'
+    | 'link'
 }
 
 export function DialogCard({
   title,
   description,
   buttonTitle,
+  variant = 'outline',
 }: DialogCardProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" className="m-2">
+        <Button variant={variant} className="m-2">
           {buttonTitle}
         </Button>
       </DialogTrigger>
