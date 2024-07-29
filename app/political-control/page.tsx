@@ -8,78 +8,76 @@ import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 import { HoverEffect } from '@/components/ui/card-hover-grid'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 
-const miscarriageItems = [
+const politicalControlItems = [
   {
     id: '1',
-    title: 'Argumentos a favor da legalização',
+    title: 'Soberania e Globalização',
     description: {
-      topic1: 'Autonomia corporal.',
-      topic2: 'Saúde pública.',
-      topic3: 'Igualdade de gênero.',
-      topic4: 'Redução de desigualdades sociais.',
+      topic1: 'Desafios à soberania nacional.',
+      topic2: 'Interdependência global',
+      topic3: 'Implicações Éticas e Práticas.',
+      topic4: 'Legitimação e eficácia da soberania na era digital.',
     },
   },
   {
     id: '2',
-    title: 'Argumentos contra o aborto',
+    title: 'Transparência vs. Segurança',
     description: {
-      topic1: 'Perspectiva moral/religiosa.',
-      topic2: 'Direito à vida do feto.',
+      topic1: 'Defesa da transparência.',
+      topic2: 'Ameaça à segurança naciona.',
     },
   },
+
   {
     id: '3',
-    title: 'Gestação e Maternidade',
+    title: 'Limites Sexuais do Estado-Nação',
     description: {
-      topic1: 'Análise das políticas e práticas de saúde pública.',
-      topic2: 'Desigualdades sociais, de gênero e raciais.',
-      topic3: 'Violência obstétrica e direitos das gestantes.',
+      topic1: 'Julian Assange e WikiLeaks.',
+      topic2: 'Divulgação de informações diplomáticas.',
+      topic3: 'Controvérsia e segurança nacional.',
+      topic4: 'Metáforas e Conflitos.',
     },
   },
   {
     id: '4',
-    title: 'Necropolítica e Aborto',
-    description: {
-      topic1: 'Impacto das políticas restritivas e permissivas.',
-      topic2: 'Direitos humanos e saúde reprodutiva.',
-      topic3: 'Autonomia sobre os corpos das mulheres.',
-      topic4: 'Procedimentos clandestinos e inseguros.',
-    },
+    title: '',
+    description: { topic1: 'Soberania.', topic2: 'Biopoder' },
   },
   {
     id: '5',
-    title: 'Desigualdades Sociais, de Gênero e Raciais',
+    title: 'Necropoder',
     description: {
-      topic1:
-        'Impacto desproporcional sobre mulheres de minorias e de baixa renda devido à falta de acesso a serviços de saúde reprodutiva.',
-      topic2:
-        'Racismo estrutural e discriminação de gênero exacerbam as desigualdades na saúde reprodutiva.',
+      topic1: 'Imposição da morte.',
+      topic2: 'Controle de movimentos, segregação, militarização.',
+      topic3: 'Ferramentas de controle militar e emergência.',
+      topic4:
+        'Reconfiguração das relações entre resistência, sacrifício e terror.',
     },
   },
   {
     id: '6',
-    title: 'Casos e Exemplos',
+    title: '',
     description: {
-      topic1: 'Documentário "À margem do corpo" (Diniz, 2006).',
-      topic2: 'Comparação com o caso de Klara Castanho.',
+      topic1: 'Implementação de políticas públicas.',
+      topic2: 'Desigualdades sociais, de gênero e raciais.',
     },
   },
 ]
 
-export default function Miscarriage() {
+export default function PoliticalControl() {
   return (
     <>
       <div className="flex flex-col">
         <LogoLink />
       </div>
       <div className="flex w-full flex-col lg:flex-row lg:justify-between">
-        <TextGenerateEffect words="Aborto" />
+        <TextGenerateEffect words="Controle Politico" />
         <AnimatedDiv className="hidden lg:flex lg:flex-row lg:gap-2">
           <Link
-            href="/political-control"
+            href="/miscarriage"
             className="mt-4 flex cursor-pointer select-none items-center rounded-md bg-stone-300/60 p-2 font-semibold text-foreground hover:bg-stone-400/60 dark:bg-stone-800 dark:hover:bg-stone-700"
           >
-            Ver mais sobre Controle Político
+            Ver mais sobre Aborto
           </Link>
           <Link
             href="/necropolitics"
@@ -89,15 +87,15 @@ export default function Miscarriage() {
           </Link>
         </AnimatedDiv>
       </div>
-      <AnimatedDiv className="flex h-full w-full items-center justify-center p-8">
-        <HoverEffect items={miscarriageItems} />
+      <AnimatedDiv className="flex h-full w-full items-center justify-center lg:p-8">
+        <HoverEffect items={politicalControlItems} />
       </AnimatedDiv>
       <AnimatedDiv className="flex flex-col gap-4 pb-24 lg:hidden">
         <Link
-          href="/political-control"
+          href="/miscarriage"
           className="flex cursor-pointer select-none items-center justify-center rounded-md bg-stone-300/60 p-2 font-semibold text-foreground hover:bg-stone-400/60 dark:bg-stone-800 dark:hover:bg-stone-700"
         >
-          Ver mais sobre Controle Político
+          Ver mais sobre Aborto
         </Link>
         <Link
           href="/necropolitics"
