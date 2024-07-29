@@ -19,7 +19,7 @@ export function PrimaryConcepts() {
         <CardPrimaryConcept
           title="Necropolítica"
           description="Necropolítica é a capacidade de estabelecer parâmetros em que a submissão da vida pela morte está legitimada."
-          goingTo="/necropolitics"
+          goingTo="/necropolitic"
           linkLabel="Entender Necropolítica"
           author="Achille Mbembe"
         />
