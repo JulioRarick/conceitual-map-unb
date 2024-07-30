@@ -35,10 +35,9 @@ export const cardEducationData: CardEducationConceptsProps[] = [
     children: (
       <div className="flex h-full flex-col items-center justify-center gap-4">
         <p className="text-center text-white">
-          Fundamental para a produção e construção do saber.
-        </p>
-        <p className="text-center text-white">
-          Estimular a crítica e a criatividade dos educandos.
+          Estimular a construção de pensamento analítico fundamentado numa
+          perspectiva teórica para estimular o espírito crítico e criativo dos
+          educandos
         </p>
       </div>
     ),
