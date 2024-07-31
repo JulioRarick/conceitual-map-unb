@@ -10,7 +10,7 @@ import { Button } from '@/components/ui/button'
 
 export function AccordionNecropolitics() {
   return (
-    <Accordion type="single" collapsible>
+    <Accordion type="single" collapsible className="lg:w-auto">
       <AccordionItem value="necropoliticConcept">
         <AccordionTrigger className="text-xl text-cyan-700 dark:text-cyan-500">
           Necropolítica

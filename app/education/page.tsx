@@ -37,7 +37,7 @@ export default function Education() {
   return (
     <>
       <LogoLink />
-      <div className="mt-3 flex w-full select-none flex-col items-center justify-center gap-4 lg:mt-0 lg:items-start lg:justify-start">
+      <div className="mt-3 flex w-full select-none flex-col items-center justify-center gap-4 lg:mt-0 lg:items-start lg:justify-start lg:overflow-x-hidden">
         <TextGenerateEffect words="Educação" />
         <AnimatedDiv className="mb-10 flex max-w-6xl flex-col self-center">
           <h2 className="hidden self-center pb-4 text-lg font-semibold text-cyan-600 lg:block lg:pb-2">

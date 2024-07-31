@@ -94,7 +94,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        'relative z-20 h-full w-full overflow-hidden rounded-xl border border-transparent bg-stone-200 p-2 shadow-md group-hover:border-stone-300 dark:border-white/[0.2] dark:bg-stone-950',
+        'relative z-10 h-full w-full rounded-xl border border-transparent bg-stone-200 p-2 shadow-md group-hover:border-stone-300 dark:border-white/[0.2] dark:bg-stone-950',
         className,
       )}
     >

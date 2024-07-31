@@ -66,12 +66,14 @@ const politicalControlItems = [
 
 export default function PoliticalControl() {
   return (
-    <>
+    <div className="flex flex-col lg:overflow-x-hidden lg:pr-4">
       <div className="flex flex-col">
         <LogoLink />
       </div>
       <div className="flex w-full flex-col lg:flex-row lg:justify-between">
-        <TextGenerateEffect words="Controle Politico" />
+        <div className="pl-10">
+          <TextGenerateEffect words="Controle Politico" />
+        </div>
         <AnimatedDiv className="hidden lg:flex lg:flex-row lg:gap-2">
           <Link
             href="/miscarriage"
@@ -105,6 +107,6 @@ export default function PoliticalControl() {
         </Link>
       </AnimatedDiv>
       <ScrollToTopButton />
-    </>
+    </div>
   )
 }

@@ -11,10 +11,10 @@ import { TextGenerateEffect } from '../ui/text-generate-effect'
 export function ContentTitleComponent() {
   return (
     <>
-      <div className="hidden self-end md:block">
+      <div className="hidden self-end lg:block">
         <ThemeToggle />
       </div>
-      <div className="flex w-auto select-none flex-col items-center gap-4 px-4 pt-8 md:flex-row md:justify-between md:pl-10 md:pr-10 md:pt-2">
+      <div className="flex w-auto select-none flex-col items-center gap-4 px-4 pt-8 lg:flex-row lg:justify-between lg:pl-10 lg:pr-10 lg:pt-2">
         <div className="flex flex-col items-center justify-center gap-2 tracking-tight text-foreground">
           <AnimatedDiv className="h-auto w-auto shadow-lg md:hidden">
             <Image

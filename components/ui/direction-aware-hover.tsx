@@ -6,6 +6,58 @@ import { useRef, useState } from 'react'
 
 import { cn } from '@/lib/utils'
 
+const variants = {
+  initial: {
+    x: 0,
+  },
+
+  exit: {
+    x: 0,
+    y: 0,
+  },
+  top: {
+    y: 20,
+  },
+  bottom: {
+    y: -20,
+  },
+  left: {
+    x: 20,
+  },
+  right: {
+    x: -20,
+  },
+}
+
+const textVariants = {
+  initial: {
+    y: 0,
+    x: 0,
+    opacity: 0,
+  },
+  exit: {
+    y: 0,
+    x: 0,
+    opacity: 0,
+  },
+  top: {
+    y: -20,
+    opacity: 1,
+  },
+  bottom: {
+    y: 2,
+    opacity: 1,
+  },
+  left: {
+    x: -2,
+    opacity: 1,
+  },
+  right: {
+    x: 20,
+    opacity: 1,
+  },
+}
+
 export const DirectionAwareHover = ({
   imageUrl,
   children,
@@ -67,7 +119,7 @@ export const DirectionAwareHover = ({
       onMouseEnter={handleMouseEnter}
       ref={ref}
       className={cn(
-        'group/card relative overflow-hidden rounded-lg bg-transparent md:h-96 md:w-96',
+        'group/card relative overflow-hidden rounded-lg bg-transparent lg:h-96 lg:w-96',
         className,
       )}
     >
@@ -93,8 +145,8 @@ export const DirectionAwareHover = ({
                 'h-full w-full scale-[1.15] object-cover',
                 imageClassName,
               )}
-              width="1000"
-              height="1000"
+              width="300"
+              height="300"
               src={imageUrl}
             />
           </motion.div>
@@ -104,10 +156,7 @@ export const DirectionAwareHover = ({
               duration: 0.5,
               ease: 'easeOut',
             }}
-            className={cn(
-              'absolute bottom-4 left-4 z-40 text-white',
-              childrenClassName,
-            )}
+            className={cn('absolute bottom-4 left-4 z-50', childrenClassName)}
           >
             {children}
           </motion.div>
@@ -115,56 +164,4 @@ export const DirectionAwareHover = ({
       </AnimatePresence>
     </motion.div>
   )
-}
-
-const variants = {
-  initial: {
-    x: 0,
-  },
-
-  exit: {
-    x: 0,
-    y: 0,
-  },
-  top: {
-    y: 20,
-  },
-  bottom: {
-    y: -20,
-  },
-  left: {
-    x: 20,
-  },
-  right: {
-    x: -20,
-  },
-}
-
-const textVariants = {
-  initial: {
-    y: 0,
-    x: 0,
-    opacity: 0,
-  },
-  exit: {
-    y: 0,
-    x: 0,
-    opacity: 0,
-  },
-  top: {
-    y: -20,
-    opacity: 1,
-  },
-  bottom: {
-    y: 2,
-    opacity: 1,
-  },
-  left: {
-    x: -2,
-    opacity: 1,
-  },
-  right: {
-    x: 20,
-    opacity: 1,
-  },
 }

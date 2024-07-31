@@ -8,16 +8,18 @@ import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 
 export default function Home() {
   return (
-    <>
+    <div className="lg:flex lg:flex-col lg:overflow-x-hidden lg:pr-4">
       <ContentTitleComponent />
-      <div className="m-8 flex select-none flex-col items-center lg:grid lg:grid-cols-2 lg:items-start">
-        <PrimaryConcepts />
-        <div className="flex flex-col">
-          <DisciplineCard />
-          <SocialMediaComponent />
+      <>
+        <div className="m-4 flex select-none flex-col items-center lg:grid lg:grid-cols-2 lg:items-start">
+          <PrimaryConcepts />
+          <div className="flex flex-col">
+            <DisciplineCard />
+            <SocialMediaComponent />
+          </div>
         </div>
-      </div>
-      <ScrollToTopButton />
-    </>
+        <ScrollToTopButton />
+      </>
+    </div>
   )
 }

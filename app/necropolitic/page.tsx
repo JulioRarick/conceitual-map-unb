@@ -12,11 +12,11 @@ import focaultImage from '@/public/focaultImage.jpeg'
 
 export default function Necropolitic() {
   return (
-    <div className="mb-10 flex select-none flex-col">
+    <div className="mb-10 flex select-none flex-col lg:mb-0 lg:pr-4">
       <LogoLink />
-      <div className="flex w-full flex-col px-4 lg:mt-16 lg:items-center">
+      <div className="flex w-full flex-col px-4 lg:mt-10 lg:items-center">
         <TextGenerateEffect words="Necropolítica" />
-        <div className="flex h-full flex-col items-center justify-center px-4 lg:grid lg:min-h-full lg:max-w-full lg:grid-cols-2 lg:overflow-auto lg:px-10">
+        <div className="flex h-full flex-col items-center justify-center px-4 lg:grid lg:min-h-full lg:max-w-full lg:grid-cols-2 lg:overflow-auto lg:overflow-x-hidden lg:px-10">
           <AnimatedDiv className="mt-6 lg:mt-10">
             <AccordionNecropolitics />
           </AnimatedDiv>
