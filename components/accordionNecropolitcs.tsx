@@ -62,7 +62,7 @@ export function AccordionNecropolitics() {
       </AccordionItem>
       <AccordionItem value="necro-power">
         <AccordionTrigger className="text-xl text-cyan-700 dark:text-cyan-500">
-          Necropolítica e Necro Poder
+          Necropolítica e Necropoder
         </AccordionTrigger>
         <AccordionContent className="flex flex-col gap-2 text-lg">
           <p>
