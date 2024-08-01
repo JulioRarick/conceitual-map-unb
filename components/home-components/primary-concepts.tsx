@@ -26,7 +26,7 @@ export function PrimaryConcepts() {
         <CardPrimaryConcept
           title="Aborto"
           description="Políticas de aborto, questões de gênero e justiça social."
-          goingTo="/miscarriage"
+          goingTo="/abortion"
           linkLabel="Debater Aborto"
         />
         <CardPrimaryConcept

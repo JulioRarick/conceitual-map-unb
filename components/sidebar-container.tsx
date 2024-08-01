@@ -45,7 +45,7 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
     },
     {
       label: 'Aborto',
-      href: '/miscarriage',
+      href: '/abortion',
       icon: (
         <IconBabyCarriage className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),

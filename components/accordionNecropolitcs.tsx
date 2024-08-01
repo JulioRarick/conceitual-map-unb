@@ -46,7 +46,7 @@ export function AccordionNecropolitics() {
           <p>• Novas formas de guerra: milícias, violência comercializada.</p>
         </AccordionContent>
       </AccordionItem>
-      <AccordionItem value="miscarriage">
+      <AccordionItem value="abortion">
         <AccordionTrigger className="text-xl text-cyan-700 dark:text-cyan-500">
           Necropolítica e Aborto
         </AccordionTrigger>
@@ -56,7 +56,7 @@ export function AccordionNecropolitics() {
           <p>• Autonomia sobre os corpos das mulheres.</p>
           <p>• Procedimentos clandestinos e inseguros.</p>
           <Button variant="secondary" className="m-2 lg:ml-16 lg:mr-16" asChild>
-            <Link href="/miscarriage">Ver mais sobre Aborto</Link>
+            <Link href="/abortion">Ver mais sobre Aborto</Link>
           </Button>
         </AccordionContent>
       </AccordionItem>

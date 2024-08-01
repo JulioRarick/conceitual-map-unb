@@ -8,7 +8,7 @@ import { ScrollToTopButton } from '@/components/scroll-to-top-button'
 import { HoverEffect } from '@/components/ui/card-hover-grid'
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 
-const miscarriageItems = [
+const abortionItems = [
   {
     id: '1',
     title: 'Argumentos a favor da legalização',
@@ -66,7 +66,7 @@ const miscarriageItems = [
   },
 ]
 
-export default function Miscarriage() {
+export default function Abortion() {
   return (
     <div className="flex flex-col lg:overflow-x-hidden lg:pr-4">
       <LogoLink />
@@ -90,7 +90,7 @@ export default function Miscarriage() {
         </AnimatedDiv>
       </div>
       <AnimatedDiv className="flex h-full w-full items-center justify-center p-2 lg:p-8">
-        <HoverEffect items={miscarriageItems} />
+        <HoverEffect items={abortionItems} />
       </AnimatedDiv>
       <AnimatedDiv className="flex flex-col gap-4 pb-24 lg:hidden">
         <Link

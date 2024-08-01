@@ -76,7 +76,7 @@ export default function PoliticalControl() {
         </div>
         <AnimatedDiv className="hidden lg:flex lg:flex-row lg:gap-2">
           <Link
-            href="/miscarriage"
+            href="/abortion"
             className="mt-4 flex cursor-pointer select-none items-center rounded-md bg-stone-300/60 p-2 font-semibold text-foreground hover:bg-stone-400/60 dark:bg-stone-800 dark:hover:bg-stone-700"
           >
             Ver mais sobre Aborto
@@ -94,7 +94,7 @@ export default function PoliticalControl() {
       </AnimatedDiv>
       <AnimatedDiv className="flex flex-col gap-4 pb-24 lg:hidden">
         <Link
-          href="/miscarriage"
+          href="/abortion"
           className="flex cursor-pointer select-none items-center justify-center rounded-md bg-stone-300/60 p-2 font-semibold text-foreground hover:bg-stone-400/60 dark:bg-stone-800 dark:hover:bg-stone-700"
         >
           Ver mais sobre Aborto
