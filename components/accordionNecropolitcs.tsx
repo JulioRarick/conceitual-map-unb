@@ -75,7 +75,7 @@ export function AccordionNecropolitics() {
             terror.
           </p>
           <Button variant="secondary" className="m-2 lg:ml-16 lg:mr-16" asChild>
-            <Link href="/politicalControl">
+            <Link href="/political-control">
               Ver mais sobre Controle Político
             </Link>
           </Button>
