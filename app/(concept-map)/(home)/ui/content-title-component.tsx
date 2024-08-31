@@ -2,11 +2,10 @@
 
 import Image from 'next/image'
 
+import { AnimatedDiv } from '@/components/animated-div'
+import { ThemeToggle } from '@/components/theme-toggle'
+import { TextGenerateEffect } from '@/components/ui/text-generate-effect'
 import unbLogo from '@/public/unbLogo.png'
-
-import { AnimatedDiv } from '../animated-div'
-import { ThemeToggle } from '../theme-toggle'
-import { TextGenerateEffect } from '../ui/text-generate-effect'
 
 export function ContentTitleComponent() {
   return (

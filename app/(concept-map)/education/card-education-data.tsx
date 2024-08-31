@@ -1,4 +1,4 @@
-import { CardEducationConceptsProps } from '@/components/cards/card-education-concepts'
+import { CardEducationConceptsProps } from './ui/card-education-concepts'
 
 export const cardEducationData: CardEducationConceptsProps[] = [
   {
@@ -146,3 +146,15 @@ export const cardEducationData: CardEducationConceptsProps[] = [
     ),
   },
 ]
+export const pauloFreireData = {
+  title: 'Paulo Freire',
+  description:
+    'Paulo Freire (1921-1997) foi um renomado educador e filósofo brasileiro, amplamente reconhecido por suas contribuições à teoria da educação. Ele é mais conhecido por seu trabalho seminal, "Pedagogia do Oprimido", publicado em 1968. Freire propôs uma abordagem de ensino revolucionária que enfatiza a conscientização crítica e a educação como um ato de liberdade. Sua metodologia, conhecida como "pedagogia crítica", incentiva os educandos a questionar e desafiar as opressões sociais e políticas em suas vidas, promovendo assim uma educação libertadora. Freire trabalhou extensivamente em programas de alfabetização de adultos no Brasil e em outros países da América Latina e África, influenciando educadores em todo o mundo com suas ideias sobre a educação como uma prática de liberdade e transformação social.',
+  buttonTitle: 'Ver biografia',
+}
+export const marilenaData = {
+  title: 'Marilena Chaui',
+  description:
+    'Marilena Chaui (1941-) é uma influente filósofa e professora brasileira, conhecida por suas contribuições no campo da filosofia política e social. Formada em Filosofia pela Universidade de São Paulo (USP), onde também obteve seu doutorado, Chaui tornou-se uma das mais importantes intelectuais brasileiras contemporâneas.Seu trabalho aborda temas como a ideologia, a democracia, a cultura e a educação, com uma forte influência do pensamento de Baruch Spinoza e da Escola de Frankfurt. Uma de suas obras mais conhecidas é "Convite à Filosofia", que se tornou um livro amplamente utilizado em cursos de introdução à filosofia no Brasil. Chaui também é reconhecida por sua atuação política e social, sendo uma defensora ativa da democracia e dos direitos humanos. Ao longo de sua carreira, ela participou de debates públicos e movimentos sociais, contribuindo para a reflexão crítica sobre a sociedade brasileira e seus desafios.',
+  buttonTitle: 'Ver biografia',
+}

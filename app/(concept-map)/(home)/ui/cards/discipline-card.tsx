@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
-import { AnimatedDiv } from '../animated-div'
-import { Button } from '../ui/button'
+import { AnimatedDiv } from '@/components/animated-div'
+import { Button } from '@/components/ui/button'
 
 export function DisciplineCard() {
   return (

@@ -2,13 +2,13 @@ import { GitHubLogoIcon, InstagramLogoIcon } from '@radix-ui/react-icons'
 import { Link2 } from 'lucide-react'
 import Link from 'next/link'
 
-import { AnimatedDiv } from '../animated-div'
+import { AnimatedDiv } from '@/components/animated-div'
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '../ui/tooltip'
+} from '@/components/ui/tooltip'
 
 export function SocialMediaComponent() {
   return (

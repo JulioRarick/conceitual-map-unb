@@ -1,10 +1,14 @@
 'use client'
 import {
+  IconAdjustments,
   IconBabyCarriage,
   IconBooks,
   IconBuilding,
+  IconCannabis,
   IconCopyright,
   IconHome,
+  IconPeace,
+  IconPrison,
   IconScale,
 } from '@tabler/icons-react'
 import { motion } from 'framer-motion'
@@ -37,6 +41,27 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
       ),
     },
     {
+      label: 'Democracia',
+      href: '/democracy',
+      icon: (
+        <IconScale className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+      ),
+    },
+    {
+      label: 'Direitos Humanos',
+      href: '/human-rights',
+      icon: (
+        <IconPeace className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+      ),
+    },
+    {
+      label: 'Controle político',
+      href: '/political-control',
+      icon: (
+        <IconAdjustments className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+      ),
+    },
+    {
       label: 'Necropolítica',
       href: '/necropolitic',
       icon: (
@@ -51,10 +76,17 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
       ),
     },
     {
-      label: 'Controle político',
-      href: '/political-control',
+      label: 'Sistema Prisional',
+      href: '/prison-system',
       icon: (
-        <IconScale className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+        <IconPrison className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+      ),
+    },
+    {
+      label: 'Drogas',
+      href: '/drugs',
+      icon: (
+        <IconCannabis className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
   ]
