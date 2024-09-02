@@ -12,6 +12,7 @@ import React, {
 
 import { cn } from '@/lib/utils'
 
+import { LanguageToggle } from '../language-toggle'
 import { ThemeToggle } from '../theme-toggle'
 
 interface Links {
@@ -133,6 +134,7 @@ export const MobileSidebar = ({
           </div>
         </Link>
         <div className="z-20 flex w-full justify-end gap-4">
+          <LanguageToggle />
           <ThemeToggle />
           <IconMenu2
             className="h-8 w-8 text-foreground"

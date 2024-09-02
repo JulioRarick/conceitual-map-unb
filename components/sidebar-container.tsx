@@ -6,6 +6,7 @@ import {
   IconBuilding,
   IconCannabis,
   IconCopyright,
+  IconFile3d,
   IconHome,
   IconPeace,
   IconPrison,
@@ -16,6 +17,7 @@ import { BrainCircuit } from 'lucide-react'
 import Link from 'next/link'
 import React, { ReactNode, useState } from 'react'
 
+import { usePageName } from '@/hooks/use-page-name'
 import { cn } from '@/lib/utils'
 
 import { Sidebar, SidebarBody, SidebarLink } from './ui/sidebar'
@@ -25,6 +27,7 @@ interface SidebarContainerProps {
 }
 
 export function SidebarContainer({ children }: SidebarContainerProps) {
+  const { pageName } = usePageName()
   const links = [
     {
       label: 'Home',
@@ -34,59 +37,66 @@ export function SidebarContainer({ children }: SidebarContainerProps) {
       ),
     },
     {
-      label: 'Educação',
+      label: pageName.education,
       href: '/education',
       icon: (
         <IconBooks className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Democracia',
+      label: pageName.democracy,
       href: '/democracy',
       icon: (
         <IconScale className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Direitos Humanos',
+      label: pageName.humanRights,
       href: '/human-rights',
       icon: (
         <IconPeace className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Controle político',
+      label: pageName.politicalControl,
       href: '/political-control',
       icon: (
         <IconAdjustments className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Necropolítica',
+      label: pageName.necropolitic,
       href: '/necropolitic',
       icon: (
         <IconBuilding className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Aborto',
+      label: pageName.abortion,
       href: '/abortion',
       icon: (
         <IconBabyCarriage className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Sistema Prisional',
+      label: pageName.prisonSystem,
       href: '/prison-system',
       icon: (
         <IconPrison className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
     {
-      label: 'Drogas',
+      label: pageName.drugs,
       href: '/drugs',
       icon: (
         <IconCannabis className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
+      ),
+    },
+    {
+      label: pageName.projectsStudents,
+      href: '/projects-students',
+      icon: (
+        <IconFile3d className="h-6 w-6 flex-shrink-0 text-stone-700 dark:text-stone-400" />
       ),
     },
   ]

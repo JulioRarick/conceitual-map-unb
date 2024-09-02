@@ -1,3 +1,5 @@
+import { DialogCardProps } from '@/@types/components-types'
+
 import { Button } from './ui/button'
 import {
   Dialog,
@@ -7,19 +9,6 @@ import {
   DialogTitle,
   DialogTrigger,
 } from './ui/dialog'
-
-interface DialogCardProps {
-  title: string
-  description: string
-  buttonTitle: string
-  variant?:
-    | 'default'
-    | 'destructive'
-    | 'outline'
-    | 'secondary'
-    | 'ghost'
-    | 'link'
-}
 
 export function DialogCard({
   title,

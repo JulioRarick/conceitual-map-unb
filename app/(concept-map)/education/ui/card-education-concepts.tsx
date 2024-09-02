@@ -1,16 +1,10 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import { AnimatePresence, motion } from 'framer-motion'
-import React, { ReactNode, useState } from 'react'
+import React, { useState } from 'react'
 
+import { CardEducationConceptsProps } from '@/@types/components-types'
 import { CanvasRevealEffect } from '@/components/ui/canvas-reveal-effect'
-
-export interface CardEducationConceptsProps {
-  id?: string
-  title: string
-  icon: ReactNode
-  children?: ReactNode
-}
 
 export function CardEducationConcepts({
   title,

@@ -1,10 +1,4 @@
-interface CardPrimaryConceptProps {
-  title: string
-  description: string
-  goingTo: string
-  linkLabel?: string
-  author?: string
-}
+import { CardPrimaryConceptProps } from '@/@types/components-types'
 
 export function CardPrimaryConcept({
   description,

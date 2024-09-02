@@ -5,6 +5,7 @@ import { Inter as FontSans } from 'next/font/google'
 import { ThemeProvider } from 'next-themes'
 
 import { SidebarContainer } from '@/components/sidebar-container'
+import { LanguageProvider } from '@/context/language-provider'
 import { cn } from '@/lib/utils'
 
 const fontSans = FontSans({
@@ -38,7 +39,9 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <SidebarContainer>{children}</SidebarContainer>
+            <LanguageProvider>
+              <SidebarContainer>{children}</SidebarContainer>
+            </LanguageProvider>
           </ThemeProvider>
         </main>
       </body>

@@ -1,10 +1,6 @@
-import { motion, MotionProps } from 'framer-motion'
-import { ReactNode } from 'react'
+import { motion } from 'framer-motion'
 
-interface AnimatedDivProps extends MotionProps {
-  children: ReactNode
-  className?: string
-}
+import { AnimatedDivProps } from '@/@types/components-types'
 
 export function AnimatedDiv({
   children,

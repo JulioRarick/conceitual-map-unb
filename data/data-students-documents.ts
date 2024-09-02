@@ -1,8 +1,4 @@
-interface StudentsDocumentsDataTypes {
-  id: number
-  title: string
-  documentUrl: string
-}
+import { StudentsDocumentsDataTypes } from '@/@types/data-types'
 
 export const studentsDocumentsData: StudentsDocumentsDataTypes[] = [
   {

@@ -24,7 +24,7 @@ export function SocialMediaComponent() {
               <GitHubLogoIcon className="h-8 w-8 text-white" />
             </Link>
           </TooltipTrigger>
-          <TooltipContent>Repositório do projeto</TooltipContent>
+          <TooltipContent>Project repository</TooltipContent>
         </Tooltip>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -36,7 +36,7 @@ export function SocialMediaComponent() {
               <InstagramLogoIcon className="h-8 w-8 text-white" />
             </Link>
           </TooltipTrigger>
-          <TooltipContent>Me siga no Instagram</TooltipContent>
+          <TooltipContent>My Instagram</TooltipContent>
         </Tooltip>
         <Tooltip>
           <TooltipTrigger asChild>
@@ -48,7 +48,7 @@ export function SocialMediaComponent() {
               <Link2 className="h-9 w-9 text-emerald-600" /> rarick
             </Link>
           </TooltipTrigger>
-          <TooltipContent>Veja meu portfólio</TooltipContent>
+          <TooltipContent>Portfolio</TooltipContent>
         </Tooltip>
       </TooltipProvider>
     </AnimatedDiv>

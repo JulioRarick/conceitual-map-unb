@@ -8,12 +8,17 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel'
+import { data } from '@/data'
+import { useLanguage } from '@/hooks/use-language'
 import marilenaImage from '@/public/marilenaImage.jpeg'
 import pauloFreireImage from '@/public/pauloFreireImage.jpg'
 
-import { marilenaData, pauloFreireData } from '../card-education-data'
-
 export function CarouselAuthors() {
+  const { language } = useLanguage()
+
+  const pauloFreireData = data[language].pauloFreire
+  const marilenaData = data[language].marilena
+
   return (
     <div className="flex h-full w-full items-center justify-center">
       <Carousel className="flex">

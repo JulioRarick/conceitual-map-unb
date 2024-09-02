@@ -2,12 +2,16 @@ import { BrainCircuit } from 'lucide-react'
 import Link from 'next/link'
 
 import { AnimatedDiv } from './animated-div'
+import { LanguageToggle } from './language-toggle'
 import { ThemeToggle } from './theme-toggle'
 
 export function LogoLink() {
   return (
     <>
       <div className="hidden self-end lg:block">
+        <div className="mr-10">
+          <LanguageToggle />
+        </div>
         <ThemeToggle />
       </div>
       <AnimatedDiv className="ml-10 mt-4 flex select-none items-center justify-start lg:ml-0 lg:mt-0 lg:w-full lg:justify-center">
