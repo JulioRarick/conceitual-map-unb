@@ -7,10 +7,15 @@ import {
   pauloFreireEnglishData,
 } from './card-education-data'
 import { abortionItems, abortionItemsEnglish } from './data-abortion'
+import {
+  achileMbembeData,
+  achileMbembeEnglishData,
+  foucaultData,
+  foucaultEnglishData,
+} from './data-authors-necropolitic'
 import { democracyData, democracyEnglishData } from './data-democracy'
 import { drugsData, drugsEnglishData } from './data-drugs'
 import { humanRightsData, humanRightsEnglishData } from './data-human-rights'
-import { lgbtqiData, lgbtqiEnglishData } from './data-lgbtqi'
 import { pagesNames, pagesNamesEnglish } from './data-pages-names'
 import {
   politicalControlItems,
@@ -25,7 +30,6 @@ import {
   relationsHumanRightsConcepts,
   relationsHumanRightsConceptsEnglish,
 } from './data-relations-human-rights'
-import { studentsDocumentsData } from './data-students-documents'
 
 export const data = {
   portuguese: {
@@ -39,9 +43,10 @@ export const data = {
     marilena: marilenaData,
     democracy: democracyData,
     drugs: drugsData,
-    lgbtqi: lgbtqiData,
     humanRights: humanRightsData,
     relationsHumanRights: relationsHumanRightsConcepts,
+    achileMbembe: achileMbembeData,
+    foucault: foucaultData,
   },
   english: {
     pagesNames: pagesNamesEnglish[0],
@@ -54,8 +59,9 @@ export const data = {
     marilena: marilenaEnglishData,
     democracy: democracyEnglishData,
     drugs: drugsEnglishData,
-    lgbtqi: lgbtqiEnglishData,
     humanRights: humanRightsEnglishData,
     relationsHumanRights: relationsHumanRightsConceptsEnglish,
+    achileMbembe: achileMbembeEnglishData,
+    foucault: foucaultEnglishData,
   },
 }

@@ -11,6 +11,7 @@ export const pagesNames: PagesNamesTypes[] = [
     humanRights: 'Direitos Humanos',
     drugs: "'Guerra às Drogas'",
     projectsStudents: 'Trabalhos realizados',
+    lgbtqia: 'LGBTQIA+',
   },
 ]
 export const pagesNamesEnglish: PagesNamesTypes[] = [
@@ -24,5 +25,6 @@ export const pagesNamesEnglish: PagesNamesTypes[] = [
     humanRights: 'Human Rights',
     drugs: "'War on Drugs'",
     projectsStudents: 'Works',
+    lgbtqia: 'LGBTQIA+',
   },
 ]

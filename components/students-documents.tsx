@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react'
 
-import { useLanguage } from '@/hooks/use-language'
 import { studentsDocumentsData } from '@/data/data-students-documents'
+import { useLanguage } from '@/hooks/use-language'
 
 import { AnimatedDiv } from './animated-div'
 
@@ -30,8 +30,8 @@ export function StudentsDocuments() {
           return (
             <div key={item.id}>
               <a
-                href={item.title}
-                download={item.documentUrl}
+                href={item.documentUrl}
+                download={item.documentName}
                 className="group/item flex w-fit items-center gap-2 text-start leading-10 text-stone-900 underline underline-offset-4 transition hover:text-cyan-700 dark:text-stone-300 dark:hover:text-cyan-400 lg:ml-10"
               >
                 <ArrowRightIcon className="invisible hidden h-6 w-6 transform ease-in-out group-hover/item:visible lg:block" />

@@ -23,6 +23,7 @@ export interface PagesNamesTypes {
   humanRights: string
   drugs: string
   projectsStudents: string
+  lgbtqia: string
 }
 export interface PrimaryConceptsDataTypes {
   id: number
@@ -36,10 +37,16 @@ export interface StudentsDocumentsDataTypes {
   id: number
   title: string
   documentUrl: string
+  documentName: string
 }
 export interface AuthorsBiographyDataTypes {
   id: number
   title: string
+  description: string
+  buttonTitle: string
+}
+export interface AuthorsNecropoliticDataTypes {
+  name: string
   description: string
   buttonTitle: string
 }
