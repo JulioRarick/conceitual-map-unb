@@ -2,13 +2,12 @@ import { ArrowRightIcon } from 'lucide-react'
 
 import { data } from '@/data'
 import { useLanguage } from '@/hooks/use-language'
+import { studentsDocumentsData } from '@/data/data-students-documents'
 
 import { AnimatedDiv } from './animated-div'
 
 export function StudentsDocuments() {
   const { language } = useLanguage()
-
-  const studentsDocumentsData = data[language].studentsDocuments
 
   return (
     <AnimatedDiv className="mt-4 flex flex-col gap-2 rounded-md bg-stone-200/50 px-6 py-8 shadow-md dark:bg-stone-900/50 lg:ml-10 lg:px-16 lg:py-10">
