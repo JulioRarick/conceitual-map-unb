@@ -31,7 +31,7 @@ export default function HumanRights() {
           <h1 className="text-2xl font-bold tracking-tighter text-cyan-600">
             {language === 'portuguese'
               ? 'Relações entre conceitos'
-              : 'Relationships among concepts'}
+              : 'Connection with others concepts'}
           </h1>
           <div className="flex flex-col gap-2 lg:grid lg:grid-cols-2 lg:grid-rows-4">
             {relationsHumanRightsWithOthers.map((aspect) => {
