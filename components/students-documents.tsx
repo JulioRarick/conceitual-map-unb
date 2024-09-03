@@ -1,6 +1,5 @@
 import { ArrowRightIcon } from 'lucide-react'
 
-import { data } from '@/data'
 import { useLanguage } from '@/hooks/use-language'
 import { studentsDocumentsData } from '@/data/data-students-documents'
 
