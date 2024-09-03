@@ -18,9 +18,9 @@ export default function Democracy() {
   const democracyData = data[language].democracy
 
   return (
-    <>
+    <div className="flex flex-col lg:overflow-auto">
       <LogoLink />
-      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center lg:overflow-auto">
+      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
         <TextGenerateEffect words={pageName.democracy} />
         <PageCardCarousel
           dataContent={democracyData}
@@ -65,6 +65,6 @@ export default function Democracy() {
         </div>
       </div>
       <ScrollToTopButton />
-    </>
+    </div>
   )
 }

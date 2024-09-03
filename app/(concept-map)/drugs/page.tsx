@@ -18,9 +18,9 @@ export default function Drugs() {
   const drugsDataContent = data[language].drugs
 
   return (
-    <>
+    <div className="flex flex-col lg:overflow-auto">
       <LogoLink />
-      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center lg:overflow-auto">
+      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
         <TextGenerateEffect words={pageName.drugs} />
         <PageCardCarousel
           dataContent={drugsDataContent}
@@ -66,6 +66,6 @@ export default function Drugs() {
         </div>
       </div>
       <ScrollToTopButton />
-    </>
+    </div>
   )
 }
