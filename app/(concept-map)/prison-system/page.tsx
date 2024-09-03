@@ -21,7 +21,7 @@ export default function PrisonSystem() {
   return (
     <>
       <LogoLink />
-      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
+      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center lg:overflow-auto">
         <TextGenerateEffect words={pageName.prisonSystem} />
         <PageCardCarousel dataContent={prisonSystemData} />
         <div className="flex h-full w-full flex-col items-center justify-center gap-4">
