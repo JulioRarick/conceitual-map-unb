@@ -18,9 +18,9 @@ export default function Democracy() {
   const democracyData = data[language].democracy
 
   return (
-    <div className="flex flex-col overflow-scroll">
+    <>
       <LogoLink />
-      <div className="flex h-full w-full flex-1 flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
+      <div className="flex h-full w-full flex-col px-4 lg:mt-14 lg:items-center lg:justify-center">
         <TextGenerateEffect words={pageName.democracy} />
         <PageCardCarousel
           dataContent={democracyData}
@@ -44,7 +44,7 @@ export default function Democracy() {
             O que fazer para garantir a democracia - Luis Felipe Miguel
             {language === 'english' && ' (scientific paper)'}
           </Link>
-          <div className="px-6 pb-8">
+          <div className="gap-3 px-6 pb-8 lg:flex lg:flex-row">
             <RedirectButton
               redirectTo="/political-control"
               textPage={pageName.politicalControl}
@@ -65,6 +65,6 @@ export default function Democracy() {
         </div>
       </div>
       <ScrollToTopButton />
-    </div>
+    </>
   )
 }

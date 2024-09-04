@@ -19,9 +19,9 @@ export default function PrisonSystem() {
   const prisonSystemData = data[language].prisonSystem
 
   return (
-    <div className="flex flex-col overflow-scroll">
+    <>
       <LogoLink />
-      <div className="flex h-full w-full flex-1 flex-col px-4 lg:mt-10 lg:items-center lg:justify-center lg:overflow-auto">
+      <div className="flex h-full w-full flex-col px-4 lg:mt-14 lg:items-center lg:justify-center lg:overflow-auto">
         <TextGenerateEffect words={pageName.prisonSystem} />
         <PageCardCarousel dataContent={prisonSystemData} />
         <div className="flex h-full w-full flex-col items-center justify-center gap-4">
@@ -43,7 +43,7 @@ export default function PrisonSystem() {
             Encarceramento em massa - A tragédia prisional brasileira
             {language === 'portuguese' ? ' (documentário)' : ' (documentary)'}
           </Link>
-          <div className="px-6 pb-8">
+          <div className="gap-3 px-6 pb-8 lg:flex lg:flex-row">
             <RedirectButton
               redirectTo="/political-control"
               textPage={pageName.politicalControl}
@@ -64,6 +64,6 @@ export default function PrisonSystem() {
         </div>
       </div>
       <ScrollToTopButton />
-    </div>
+    </>
   )
 }
