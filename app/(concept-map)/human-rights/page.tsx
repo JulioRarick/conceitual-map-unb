@@ -20,7 +20,7 @@ export default function HumanRights() {
     <>
       <LogoLink />
       <TextGenerateEffect words={pageName.humanRights} />
-      <div className="mb-12 flex h-full w-full flex-col items-center justify-center overflow-auto px-4 lg:mt-10 lg:grid lg:grid-cols-[min-content_1fr]">
+      <div className="mb-12 flex h-full w-full flex-1 flex-col items-center justify-center overflow-auto px-4 lg:mt-10 lg:grid lg:grid-cols-[min-content_1fr]">
         <div className="flex h-full w-full flex-col items-start">
           <h1 className="p-4 text-2xl font-bold tracking-tighter">
             {language === 'portuguese' ? 'Conceitos' : 'Concepts'}

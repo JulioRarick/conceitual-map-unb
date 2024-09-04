@@ -20,7 +20,7 @@ export default function Democracy() {
   return (
     <div className="flex flex-col lg:overflow-auto">
       <LogoLink />
-      <div className="flex h-full w-full flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
+      <div className="flex h-full w-full flex-1 flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
         <TextGenerateEffect words={pageName.democracy} />
         <PageCardCarousel
           dataContent={democracyData}
