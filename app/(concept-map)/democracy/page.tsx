@@ -18,7 +18,7 @@ export default function Democracy() {
   const democracyData = data[language].democracy
 
   return (
-    <div className="flex flex-col lg:overflow-auto">
+    <div className="flex flex-col overflow-scroll">
       <LogoLink />
       <div className="flex h-full w-full flex-1 flex-col px-4 lg:mt-10 lg:items-center lg:justify-center">
         <TextGenerateEffect words={pageName.democracy} />

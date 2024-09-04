@@ -19,7 +19,7 @@ export default function PrisonSystem() {
   const prisonSystemData = data[language].prisonSystem
 
   return (
-    <div className="flex flex-col lg:overflow-auto">
+    <div className="flex flex-col overflow-scroll">
       <LogoLink />
       <div className="flex h-full w-full flex-1 flex-col px-4 lg:mt-10 lg:items-center lg:justify-center lg:overflow-auto">
         <TextGenerateEffect words={pageName.prisonSystem} />
