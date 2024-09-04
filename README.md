@@ -69,6 +69,10 @@ The concept map includes the following topics:
 - **Necropolitics**
 - **Abortion**
 - **Political Control**
+- **Democracy**
+- **War on Drugs**
+- **Human Rights**
+- **System Prison**
 
 These topics are represented with interconnections to highlight their relationships and relevance within the broader context of the course.
 
